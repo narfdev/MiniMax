@@ -22,6 +22,8 @@ local now_if_args = _G.Config.now_if_args
 -- requires two extra pieces that don't come with Neovim directly:
 -- - Language parsers: programs that convert text into trees. Some are built-in
 --   (like for Lua), 'nvim-treesitter' provides many others.
+--   NOTE: It requires third party software to build and install parsers.
+--   See the link for more info in "Requirements" section of the MiniMax README.
 -- - Query files: definitions of how to extract information from trees in
 --   a useful manner (see `:h treesitter-query`). 'nvim-treesitter' also provides
 --   these, while 'nvim-treesitter-textobjects' provides the ones for Neovim
