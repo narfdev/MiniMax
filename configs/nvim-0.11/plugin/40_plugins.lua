@@ -172,3 +172,21 @@ later(function() add('rafamadriz/friendly-snippets') end)
 --   -- Enable only one
 --   vim.cmd('color everforest')
 -- end)
+MiniDeps.now(function()
+  -- Install only those that you need
+  --add('sainnhe/everforest')
+  --add('Shatur/neovim-ayu')
+  --add('ellisonleao/gruvbox.nvim')
+  add({ source = "catppuccin/nvim", name = "catppuccin" })
+  add({ source = "navarasu/onedark.nvim", name = "onedark" })
+  add({ source = "EdenEast/nightfox.nvim", name = "nightfox" })
+
+  -- Enable only one
+  require('onedark').setup {
+      style = 'deep'
+  }
+  require('onedark').load()
+  vim.cmd("colorscheme onedark")
+  --vim.cmd("colorscheme duskfox")
+  --vim.cmd("colorscheme catppuccin-mocha")
+end)
